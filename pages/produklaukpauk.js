@@ -10,7 +10,7 @@ const Produk = (props) => (
         <div class="row">
           <div class="col-md-12 col-lg-8">
             <div class="title-single-box">
-              <h1 class="title-single">Sayur</h1>
+              <h1 class="title-single">Lauk-Pauk</h1>
             </div>
           </div>
           <div class="col-md-12 col-lg-4">
@@ -21,6 +21,9 @@ const Produk = (props) => (
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
                   Kategori
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Lauk Pauk
                 </li>
               </ol>
             </nav>
@@ -47,14 +50,13 @@ const Produk = (props) => (
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="/img/kangkung.jpg" alt="" class="img-a img-fluid"/>
+                <img src="/img/tempe.jpg" alt="" class="img-a img-fluid"/>
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">Sayur
-                        <br/> Kangkung</a>
+                      <a href="#">Tempe</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
@@ -76,47 +78,18 @@ const Produk = (props) => (
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="/img/d5836a27-10ad-4bc7-b9a2-d71a7279e6d7.jpg" alt="" class="img-a img-fluid"/>
+                <img src="/img/158630258503416_668c706e-427d-4f3b-a5a9-ecbff44995d9.jpg" alt="" class="img-a img-fluid"/>
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">Sayur
-                        <br/> Bayam</a>
+                      <a href="#">Tahu</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Rp. 4.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 4.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/U1fabdf60ed5f441a876ce00b69452381c.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Wortel</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 3000</span>
+                      <span class="price-a">Rp. 3.000</span>
                     </div>
                   </div>
                   <div class="card-footer-a">
@@ -133,24 +106,25 @@ const Produk = (props) => (
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="/img/tomaotoes1_560x560.jpg" alt="" class="img-a img-fluid"/>
+                <img src="/img/ikan-tongkol-putih.jpg" alt="" class="img-a img-fluid"/>
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">Tomat</a>
+                      <a href="#">Ikan
+                      <br/> Tongkol</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7.000</span>
+                      <span class="price-a">Rp. 20.000</span>
                     </div>
                   </div>
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
                       <li>
-                        <h4 class="card-info-title">Rp. 7.000</h4>
+                        <h4 class="card-info-title">Rp. 20.000</h4>
                       </li>
                     </ul>
                   </div>
@@ -161,24 +135,25 @@ const Produk = (props) => (
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="/img/pngtree-non-polluted-ingredients-cabbage-png-image_2380139.jpg" alt="" class="img-a img-fluid"/>
+                <img src="/img/39dc33e0db0b4fa14723193f229cb970.jpg" alt="" class="img-a img-fluid"/>
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">Kubis</a>
+                      <a href="#">Ayam
+                      <br/> Potong</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7.000</span>
+                      <span class="price-a">Rp. 47.000</span>
                     </div>
                   </div>
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
                       <li>
-                        <h4 class="card-info-title">Rp. 7.000</h4>
+                        <h4 class="card-info-title">Rp. 47.000</h4>
                       </li>
                     </ul>
                   </div>
@@ -189,24 +164,53 @@ const Produk = (props) => (
           <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
-                <img src="/img/Jagung-Manis-Kulit.jpg" alt="" class="img-a img-fluid"/>
+                <img src="/img/dd03ab8998ed524835c392ae110fe1ea.jpg" alt="" class="img-a img-fluid"/>
               </div>
               <div class="card-overlay">
                 <div class="card-overlay-a-content">
                   <div class="card-header-a">
                     <h2 class="card-title-a">
-                      <a href="#">Jagung</a>
+                      <a href="#">Daging
+                      <br/> Sapi</a>
                     </h2>
                   </div>
                   <div class="card-body-a">
                     <div class="price-box d-flex">
-                      <span class="price-a">Rp. 4.000</span>
+                      <span class="price-a">Rp. 135.000</span>
                     </div>
                   </div>
                   <div class="card-footer-a">
                     <ul class="card-info d-flex justify-content-around">
                       <li>
-                        <h4 class="card-info-title">Rp. 4.000</h4>
+                        <h4 class="card-info-title">Rp. 135.000</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="/img/product-image.jpg" alt="" class="img-a img-fluid"/>
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a href="#">Telur</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">Rp. 50.000</span>
+                    </div>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Rp. 50.000</h4>
                       </li>
                     </ul>
                   </div>

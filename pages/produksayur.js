@@ -1,96 +1,111 @@
-const Widget = () => (
-  <main id="main">
-    <section class="section-property section-t8">
+import Footer from "../component/footer";
+import NavBar from "../component/navbar";
+
+const Produk = (props) => (
+    <div className="container">
+        <NavBar />
+        
+        <section class="intro-single">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Kategori</h2>
-              </div>
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">Sayur</h1>
             </div>
+          </div>
+          <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Kategori
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Sayur
+                </li>
+              </ol>
+            </nav>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                <img src="/img/135715.png"/>
-                </div>
-                <div class="card-title-c align-self-center">
-                </div>
-              </div>
-              <h2 class="title-c">Sayuran</h2>
-              <div class="card-body-c">
-              </div>
-              <div class="card-footer-c">
-                <a href="/produksayur" class="link-c link-icon">Read more
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                <img src="/img/peach-37629_960_720.png"/>
-                </div>
-                <div class="card-title-c align-self-center">
-                </div>
-              </div>
-              <h2 class="title-c">Buah</h2>
-              <div class="card-body-c">
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-c foo">
-              <div class="card-header-c d-flex">
-                <div class="card-box-ico">
-                <img src="/img/lauk-icon.png"/>
-                </div>
-                <div class="card-title-c align-self-center">
-                </div>
-              </div>
-              <h2 class="title-c">Lauk-Pauk</h2>
-              <div class="card-body-c">
-              </div>
-              <div class="card-footer-c">
-                <a href="#" class="link-c link-icon">Read more
-                  <span class="bi bi-chevron-right"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        </section>
+      </div>
+    </section>
 
-        <section class="section-property section-t8">
+        <section class="property-grid grid">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
-                <h2 class="title-a">Special To Day</h2>
+          <div class="col-sm-12">
+            <div class="grid-option">
+              <form>
+                <select class="custom-select">
+                  <option selected="">All</option>
+                  <option value="1">New to Old</option>
+                  <option value="2">For Rent</option>
+                  <option value="3">For Sale</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="/img/kangkung.jpg" alt="" class="img-a img-fluid"/>
               </div>
-              <div class="title-link">
-                <a href="property-grid.html">All Property
-                  <span class="bi bi-chevron-right"></span>
-                  </a>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a href="#">Sayur
+                        <br/> Kangkung</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">Rp. 5.000</span>
+                    </div>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Rp. 5.000</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="/img/d5836a27-10ad-4bc7-b9a2-d71a7279e6d7.jpg" alt="" class="img-a img-fluid"/>
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a href="#">Sayur
+                        <br/> Bayam</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">Rp. 4.000</span>
+                    </div>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Rp. 4.000</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
                 <img src="/img/U1fabdf60ed5f441a876ce00b69452381c.jpg" alt="" class="img-a img-fluid"/>
@@ -203,9 +218,37 @@ const Widget = () => (
             </div>
           </div>
         </div>
-              </section>
-        </main>
-
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="pagination-a">
+              <ul class="pagination justify-content-end">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">
+                    <span class="bi bi-chevron-left"></span>
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item next">
+                  <a class="page-link" href="#">
+                    <span class="bi bi-chevron-right"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+        <Footer />
+    </div>
 );
 
-export default Widget;
+export default Produk;

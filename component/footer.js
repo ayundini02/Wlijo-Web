@@ -29,64 +29,35 @@ const Footer = () => (
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+              <h3 class="w-title-a text-brand">Melayani Kota:</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Site Map</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Banyuwangi</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Legal</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Klatak</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Genteng</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Careers</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Sempu</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Rogojampi</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#">Glenmore</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">International sites</h3>
-            </div>
-            <div class="w-body-a">
-              <ul class="list-unstyled">
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">China</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Argentina</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Singapore</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Philippines</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
     </section>
     <br/>
@@ -100,13 +71,7 @@ const Footer = () => (
                 <a href="#">Home</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">About</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Property</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">Blog</a>
+                <a href="#">Kategori</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">Contact</a>
@@ -139,8 +104,7 @@ const Footer = () => (
           </div>
           <div class="copyright-footer">
             <p class="copyright color-text-a">
-              © Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+              © Copyright 2021
             </p>
           </div>
           <div class="credits">
