@@ -40,7 +40,7 @@ const Produk = (props) => (
               <form>
                 <select class="custom-select">
                   <option selected="">All</option>
-                  <option value="1">New to Old</option>
+                  <option value="1"><a href="/produkbuah">New to Old</a></option>
                   <option value="2">For Rent</option>
                   <option value="3">For Sale</option>
                 </select>

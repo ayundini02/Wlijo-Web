@@ -79,7 +79,7 @@ const Widget = () => (
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
               <div class="title-box">
-                <h2 class="title-a">Special To Day</h2>
+                <h2 class="title-a">Produk</h2>
               </div>
               <div class="title-link">
                 <a href="property-grid.html">All Property
@@ -90,7 +90,67 @@ const Widget = () => (
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="/img/kangkung.jpg" alt="" class="img-a img-fluid"/>
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a href="#">Sayur
+                        <br/> Kangkung</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">Rp. 5.000</span>
+                    </div>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Rp. 5.000</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-box-a card-shadow">
+              <div class="img-box-a">
+                <img src="/img/d5836a27-10ad-4bc7-b9a2-d71a7279e6d7.jpg" alt="" class="img-a img-fluid"/>
+              </div>
+              <div class="card-overlay">
+                <div class="card-overlay-a-content">
+                  <div class="card-header-a">
+                    <h2 class="card-title-a">
+                      <a href="#">Sayur
+                        <br/> Bayam</a>
+                    </h2>
+                  </div>
+                  <div class="card-body-a">
+                    <div class="price-box d-flex">
+                      <span class="price-a">Rp. 4.000</span>
+                    </div>
+                  </div>
+                  <div class="card-footer-a">
+                    <ul class="card-info d-flex justify-content-around">
+                      <li>
+                        <h4 class="card-info-title">Rp. 4.000</h4>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
             <div class="card-box-a card-shadow">
               <div class="img-box-a">
                 <img src="/img/U1fabdf60ed5f441a876ce00b69452381c.jpg" alt="" class="img-a img-fluid"/>
@@ -203,6 +263,8 @@ const Widget = () => (
             </div>
           </div>
         </div>
+        </div>
+      </div><br/><br/>
               </section>
         </main>
 

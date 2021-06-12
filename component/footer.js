@@ -6,21 +6,20 @@ const Footer = () => (
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Tentang Kami</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+              Wlijo memberikan layanan belanja sayuran dengan kualitas yang fresh, higenis, dan tahan lama. Serta memastikan harga yang stabil dipasaran dan pemenuhan order secara tepat waktu.
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com
+                  <span class="color-text-a">Phone .</span> sayuranwlijo@gmail.com
                 </li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234
+                  <span class="color-text-a">Email .</span> +62 821-4615-7001
                 </li>
               </ul>
             </div>
@@ -57,6 +56,29 @@ const Footer = () => (
             </div>
           </div>
         </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand">Opening Hours</h3>
+            </div>
+            <div class="w-body-a">
+              <ul class="list-unstyled">
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Monday: Closed</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Tue-Wed : 9:Am - 10PM</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Thu-Fri : 9:Am - 10PM</a>
+                </li>
+                <li class="item-list-a">
+                  <i class="bi bi-chevron-right"></i> <a href="#">Sat-Sun : 5:PM - 10PM</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          </div>
         </div>
     </div>
     </section>
@@ -75,6 +97,9 @@ const Footer = () => (
               </li>
               <li class="list-inline-item">
                 <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">About</a>
               </li>
             </ul>
           </nav>
@@ -104,7 +129,7 @@ const Footer = () => (
           </div>
           <div class="copyright-footer">
             <p class="copyright color-text-a">
-              © Copyright 2021
+            All Rights Reserved. © Copyright 2021
             </p>
           </div>
           <div class="credits">
