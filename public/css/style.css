@@ -1698,7 +1698,7 @@ a:hover {
 }
 
 /*======================================
-//--//-->   AGENTS - CARD-D
+//--//-->   TEAM - CARD-D
 ======================================*/
 .card-box-d .card-overlay-hover {
   transition: all .2s ease-in-out;
@@ -1812,7 +1812,7 @@ a:hover {
   transform: translateY(0);
 }
 
-/*------/ Agent Single /------*/
+/*------/ Team Single /------*/
 .agent-info-box .socials-footer {
   margin-top: 2rem;
 }

@@ -73,9 +73,9 @@ const About= (props) => (
         <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="/img/agent-4.jpg" alt="" class="img-d img-fluid"/>
+                <img src="/img/profil/ceo.jpeg" alt="" class="img-d img-fluid"/>
               </div>
-              <div class="card-overlay card-overlay-   hover">
+              <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
@@ -85,9 +85,6 @@ const About= (props) => (
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
                   <div class="info-agents color-a">
                     <p>
                       <strong>Phone: </strong> +54 356 945234
@@ -129,7 +126,7 @@ const About= (props) => (
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="/img/agent-2.jpg" alt="" class="img-d img-fluid"/>
+                <img src="/img/profil/cfo.jpeg" alt="" class="img-d img-fluid"/>
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
@@ -141,9 +138,6 @@ const About= (props) => (
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
                   <div class="info-agents color-a">
                     <p>
                       <strong>Phone: </strong> +54 356 945234
@@ -185,7 +179,7 @@ const About= (props) => (
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="/img/agent-3.jpg" alt="" class="img-d img-fluid"/>
+                <img src="/img/profil/cmo.jpeg" alt="" class="img-d img-fluid"/>
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
@@ -197,9 +191,6 @@ const About= (props) => (
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
                   <div class="info-agents color-a">
                     <p>
                       <strong>Phone: </strong> +54 356 945234
@@ -241,7 +232,7 @@ const About= (props) => (
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="/img/agent-5.jpg" alt="" class="img-d img-fluid"/>
+                <img src="/img/profil/cto1.jpeg" alt="" class="img-d img-fluid"/>
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
@@ -254,9 +245,6 @@ const About= (props) => (
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
                   <div class="info-agents color-a">
                     <p>
                       <strong>Phone: </strong> +54 356 945234
@@ -298,7 +286,7 @@ const About= (props) => (
           <div class="col-md-4">
             <div class="card-box-d">
               <div class="card-img-d">
-                <img src="/img/agent-1.jpg" alt="" class="img-d img-fluid"/>
+                <img src="/img/profil/cto2.jpeg" alt="" class="img-d img-fluid"/>
               </div>
               <div class="card-overlay card-overlay-hover">
                 <div class="card-header-d">
@@ -310,9 +298,6 @@ const About= (props) => (
                   </div>
                 </div>
                 <div class="card-body-d">
-                  <p class="content-d color-text-a">
-                    Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two.
-                  </p>
                   <div class="info-agents color-a">
                     <p>
                       <strong>Phone: </strong> +54 356 945234
