@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NavBar = () => (
 
 <nav className="navbar navbar-default navbar-expand-lg fixed-top navbar-trans">
@@ -13,24 +15,39 @@ const NavBar = () => (
         <ul className="navbar-nav">
 
           <li className="nav-item">
-            <a className="nav-link active" href="/home">Home</a>
+            <Link href="/home">
+            <a className="nav-link active">Home</a>
+            </Link>
           </li>
 
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
             <div className="dropdown-menu">
-              <a className="dropdown-item " href="/produksayur">Sayur</a>
-              <a className="dropdown-item " href="/produkbuah">Buah</a>
-              <a className="dropdown-item " href="/produklaukpauk">Lauk Pauk</a>
+
+              <Link href="/produksayur">
+              <a className="dropdown-item">Sayur</a>
+              </Link>
+
+              <Link href="/produkbuah">
+              <a className="dropdown-item">Buah</a>
+              </Link>
+
+              <Link href="/produklaukpauk">
+              <a className="dropdown-item">Lauk Pauk</a>
+              </Link>
             </div>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link " href="/contact">Contact</a>
+            <Link href="/contact">
+            <a className="nav-link">Contact</a>
+            </Link>
           </li>
-
+          
           <li className="nav-item">
-            <a className="nav-link " href="/about">About</a>
+          <Link href="/about">
+            <a className="nav-link">About</a>
+            </Link>
           </li>
         </ul>
       </div>

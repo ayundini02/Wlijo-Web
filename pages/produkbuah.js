@@ -1,9 +1,8 @@
-import Footer from "../component/footer";
-import NavBar from "../component/navbar";
+import MainLayout from "../component/main-layout";
 
 const Produk = (props) => (
+  <MainLayout>
     <div className="container">
-        <NavBar />
         
         <section class="intro-single">
       <div class="container">
@@ -245,8 +244,9 @@ const Produk = (props) => (
         </div>
       </div>
     </section>
-        <Footer />
     </div>
+
+    </MainLayout>
 );
 
 export default Produk;

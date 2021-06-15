@@ -1,9 +1,8 @@
-import Footer from "../component/footer";
-import NavBar from "../component/navbar";
+import MainLayout from "../component/main-layout";
 
 const About= (props) => (
+  <MainLayout>
     <div className="container">
-        <NavBar />
 
         <section class="intro-single">
       <div class="container">
@@ -367,8 +366,8 @@ const About= (props) => (
       </div>
     </section>
 
-        <Footer />
     </div>
+    </MainLayout>
 );
 
 export default About;

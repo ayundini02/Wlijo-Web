@@ -1,9 +1,8 @@
-import Footer from "../component/footer";
-import NavBar from "../component/navbar";
+import MainLayout from "../component/main-layout";
 
 const Contact= (props) => (
+  <MainLayout>
     <div className="container">
-        <NavBar />
 
         <section class="intro-single">
       <div class="container">
@@ -155,8 +154,8 @@ const Contact= (props) => (
         </div>
       </div>
     </section><br/><br/>
-        <Footer />
     </div>
+    </MainLayout>
 );
 
 export default Contact;
