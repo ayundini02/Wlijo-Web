@@ -1,5 +1,32 @@
 import MainLayout from "../component/main-layout";
 
+const CardSayur = props => (
+  <div className="card-box-a card-shadow">
+    <div className="img-box-a">
+      <img src={props.imgSrc} alt="" className="img-a img-fluid"/>
+    </div>
+    <div className="card-overlay">
+      <div className="card-overlay-a-content">
+        <div className="card-header-a">
+          <h2 className="card-title-a">
+            <a href="#">{props.nama}</a>
+          </h2>
+        </div>
+        <div className="card-body-a">
+          <div className="price-box d-flex">
+            <span className="price-a">Rp. {props.harga}</span>
+          </div>
+        </div>
+        <div className="card-footer-a">
+          <ul className="card-info d-flex justify-content-around">
+            <li><h4 className="card-info-title">Rp. {props.harga}</h4></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const Produk = (props) => (
   <MainLayout>
     <div className="container">
@@ -39,413 +66,55 @@ const Produk = (props) => (
               <form>
                 <select class="custom-select">
                   <option selected="">All</option>
-                  <option value="1"><a href="/produkbuah">New to Old</a></option>
-                  <option value="2">For Rent</option>
-                  <option value="3">For Sale</option>
                 </select>
               </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/tomat.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Tomat</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 5.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/jagung.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Jagung</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 4.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 4.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/sayur_sawi.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Sayur
-                      <br/>Sawi</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 3.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/kubis.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Kubis</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 7.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/wortel.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Wortel</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 9.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 9.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/buncis.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Buncis</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 8.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 8.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/bawang_merah.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Bawang
-                      <br/> Merah</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 20.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 20.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/bawang_putih.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Bawang
-                      <br/> Putih</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 22.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 22.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/kentang.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Kentang</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 12.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 12.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/labu_siam.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Labu
-                      <br/> Siam</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 7.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 7.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/timun.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Timun</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 8.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 8.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/kacang_panjang.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Kacang
-                      <br/> Panjang</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 6.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 6.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/cabe_rawit1.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Cabe
-                      <br/> Rawit</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 8.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 8.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/cabe_merah1.jpeg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Cabe 
-                      <br/> Merah</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 28.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 28.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div className="col-md-4">
+          <CardSayur imgSrc="/img/tomat.jpeg" nama="Tomat" harga="7.000" />
         </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/jagung.jpeg" nama="Jagung" harga="4.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/sayur_sawi.jpeg" nama="Sayur Sawi" harga="7.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/kubis.jpeg" nama="Kubis" harga="7.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/wortel.jpeg" nama="Wortel" harga="9.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/buncis.jpeg" nama="Buncis" harga="8.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/bawang_merah.jpeg" nama="Bawang Merah" harga="20.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/bawang_putih.jpeg" nama="Bawang Putih" harga="22.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/kentang.jpeg" nama="Kentang" harga="12.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/labu_siam.jpeg" nama="Labu Siam" harga="7.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/timun.jpeg" nama="Timun" harga="8.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/kacang_panjang.jpeg" nama="Kacang Panjang" harga="6.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/cabe_rawit1.jpeg" nama="Cabe Rawit" harga="8.000" />
+        </div>
+        <div className="col-md-4">
+          <CardSayur imgSrc="/img/cabe_merah1.jpeg" nama="Cabe Besar" harga="28.000" />
+        </div>
+      </div>
+
         <div class="row">
           <div class="col-sm-12">
             <nav class="pagination-a">

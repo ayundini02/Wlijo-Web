@@ -1,5 +1,32 @@
 import MainLayout from "../component/main-layout";
 
+const CardBuah = props => (
+  <div className="card-box-a card-shadow">
+    <div className="img-box-a">
+      <img src={props.imgSrc} alt="" className="img-a img-fluid"/>
+    </div>
+    <div className="card-overlay">
+      <div className="card-overlay-a-content">
+        <div className="card-header-a">
+          <h2 className="card-title-a">
+            <a href="#">{props.nama}</a>
+          </h2>
+        </div>
+        <div className="card-body-a">
+          <div className="price-box d-flex">
+            <span className="price-a">Rp. {props.harga}</span>
+          </div>
+        </div>
+        <div className="card-footer-a">
+          <ul className="card-info d-flex justify-content-around">
+            <li><h4 className="card-info-title">Rp. {props.harga}</h4></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const Produk = (props) => (
   <MainLayout>
     <div className="container">
@@ -39,182 +66,25 @@ const Produk = (props) => (
               <form>
                 <select class="custom-select">
                   <option selected="">All</option>
-                  <option value="1">New to Old</option>
-                  <option value="2">For Rent</option>
-                  <option value="3">For Sale</option>
                 </select>
               </form>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/sayur_home_delivery_anggur_merah_buah_anggur_merah_fresh_bandung_1kg_full01_hdid96re.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Anggur</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 60.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 60.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/7a3f22c1c1df7cc2c0d36b665d167a9a.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Jeruk</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 47.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 47.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/duta-buah_duta-buah-salak-pondoh-jumbo-buah--1-kg-_full04.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Salak</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 11.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 11.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/59b3f8d546a30303be94ca3166db59bf.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Semangka</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 23.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 23.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/duta-buah_pepaya-calina-1-pcs--0-8-1-kg-_full02.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Pepaya</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 15.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 15.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card-box-a card-shadow">
-              <div class="img-box-a">
-                <img src="/img/manggis.jpg" alt="" class="img-a img-fluid"/>
-              </div>
-              <div class="card-overlay">
-                <div class="card-overlay-a-content">
-                  <div class="card-header-a">
-                    <h2 class="card-title-a">
-                      <a href="#">Manggis</a>
-                    </h2>
-                  </div>
-                  <div class="card-body-a">
-                    <div class="price-box d-flex">
-                      <span class="price-a">Rp. 13.000</span>
-                    </div>
-                  </div>
-                  <div class="card-footer-a">
-                    <ul class="card-info d-flex justify-content-around">
-                      <li>
-                        <h4 class="card-info-title">Rp. 13.000</h4>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div className="col-md-4">
+          <CardBuah imgSrc="/img/sayur_home_delivery_anggur_merah_buah_anggur_merah_fresh_bandung_1kg_full01_hdid96re.jpg" nama="Anggur" harga="6.000" />
         </div>
+        <div className="col-md-4">
+          <CardBuah imgSrc="/img/7a3f22c1c1df7cc2c0d36b665d167a9a.jpg" nama="Jeruk" harga="30.000" />
+        </div>
+        <div className="col-md-4">
+          <CardBuah imgSrc="/img/duta-buah_pepaya-calina-1-pcs--0-8-1-kg-_full02.jpg" nama="Pepaya" harga="15.000" />
+        </div>
+        <div className="col-md-4">
+          <CardBuah imgSrc="/img/manggis.jpg" nama="Manggis" harga="15.000" />
+        </div>
+          </div>
+
         <div class="row">
           <div class="col-sm-12">
             <nav class="pagination-a">
