@@ -16,6 +16,9 @@ const CardSayur = props => (
           <div className="price-box d-flex">
             <span className="price-a">Rp. {props.harga}</span>
           </div>
+          <a href="/kategori/detail" class="link-a">Click here to view
+            <span class="bi bi-chevron-right"></span>
+          </a>
         </div>
         <div className="card-footer-a">
           <ul className="card-info d-flex justify-content-around">
@@ -30,7 +33,7 @@ const CardSayur = props => (
 const Produk = (props) => (
   <MainLayout>
     <div className="container">
-        
+
         <section class="intro-single">
       <div class="container">
         <div class="row">
