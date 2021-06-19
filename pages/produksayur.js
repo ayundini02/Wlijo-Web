@@ -1,4 +1,5 @@
 import MainLayout from "../component/main-layout";
+import Link from "next/link";
 
 const CardSayur = props => (
   <div className="card-box-a card-shadow">
@@ -16,9 +17,6 @@ const CardSayur = props => (
           <div className="price-box d-flex">
             <span className="price-a">Rp. {props.harga}</span>
           </div>
-          <a href="/kategori/detail" class="link-a">Click here to view
-            <span class="bi bi-chevron-right"></span>
-          </a>
         </div>
         <div className="card-footer-a">
           <ul className="card-info d-flex justify-content-around">
@@ -75,45 +73,114 @@ const Produk = (props) => (
           </div>
 
           <div className="col-md-4">
+          <Link href="/kategori/[kode]/[jenis]" as="/kategori/1/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardSayur imgSrc="/img/tomat.jpeg" nama="Tomat" harga="7.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/2/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/jagung.jpeg" nama="Jagung" harga="4.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/3/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/sayur_sawi.jpeg" nama="Sayur Sawi" harga="7.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/4/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/kubis.jpeg" nama="Kubis" harga="7.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/5/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/wortel.jpeg" nama="Wortel" harga="9.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/6/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/buncis.jpeg" nama="Buncis" harga="8.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/7/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/bawang_merah.jpeg" nama="Bawang Merah" harga="20.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/8/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/bawang_putih.jpeg" nama="Bawang Putih" harga="22.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/9/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/kentang.jpeg" nama="Kentang" harga="12.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/10/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/labu_siam.jpeg" nama="Labu Siam" harga="7.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/11/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/timun.jpeg" nama="Timun" harga="8.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/12/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/kacang_panjang.jpeg" nama="Kacang Panjang" harga="6.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/13/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/cabe_rawit1.jpeg" nama="Cabe Rawit" harga="8.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/14/Sayur" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+            
           <CardSayur imgSrc="/img/cabe_merah1.jpeg" nama="Cabe Besar" harga="28.000" />
         </div>
       </div>

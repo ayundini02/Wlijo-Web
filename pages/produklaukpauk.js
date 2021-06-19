@@ -1,4 +1,5 @@
 import MainLayout from "../component/main-layout";
+import Link from "next/link";
 
 const CardLaukPauk = props => (
   <div className="card-box-a card-shadow">
@@ -72,12 +73,26 @@ const Produk = (props) => (
           </div>
 
           <div className="col-md-4">
+          <Link href="/kategori/[kode]/[jenis]" as="/kategori/19/LaukPauk" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardLaukPauk imgSrc="/img/tempe.jpg" nama="Tempe" harga="5.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/20/LaukPauk" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardLaukPauk imgSrc="/img/158630258503416_668c706e-427d-4f3b-a5a9-ecbff44995d9.jpg" nama="Tahu" harga="3.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/21/LaukPauk" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardLaukPauk imgSrc="/img/product-image.jpg" nama="Telur" harga="40.000" />
         </div>
           </div>

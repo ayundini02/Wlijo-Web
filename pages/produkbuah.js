@@ -1,4 +1,5 @@
 import MainLayout from "../component/main-layout";
+import Link from "next/link";
 
 const CardBuah = props => (
   <div className="card-box-a card-shadow">
@@ -72,15 +73,34 @@ const Produk = (props) => (
           </div>
 
           <div className="col-md-4">
+          <Link href="/kategori/[kode]/[jenis]" as="/kategori/15/Buah" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardBuah imgSrc="/img/sayur_home_delivery_anggur_merah_buah_anggur_merah_fresh_bandung_1kg_full01_hdid96re.jpg" nama="Anggur" harga="6.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/16/Buah" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardBuah imgSrc="/img/7a3f22c1c1df7cc2c0d36b665d167a9a.jpg" nama="Jeruk" harga="30.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/17/Buah" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardBuah imgSrc="/img/duta-buah_pepaya-calina-1-pcs--0-8-1-kg-_full02.jpg" nama="Pepaya" harga="15.000" />
         </div>
+
         <div className="col-md-4">
+        <Link href="/kategori/[kode]/[jenis]" as="/kategori/18/Buah" class="link-a">Click here to view
+            </Link>
+            <span class="bi bi-chevron-right"></span>
+
           <CardBuah imgSrc="/img/manggis.jpg" nama="Manggis" harga="15.000" />
         </div>
           </div>
