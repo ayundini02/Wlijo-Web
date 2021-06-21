@@ -1,98 +1,98 @@
 [
     {
         "id": 1,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/tomat.jpeg",
         "nama": "Tomat",
         "harga": "7.000"
     },
     {
         "id": 2,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/jagung.jpeg",
         "nama": "Jagung",
         "harga": "4.000"
     },
     {
         "id": 3,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/sayur_sawi.jpeg",
         "nama": "Sayur Sawi",
         "harga": "7.000"
     },
     {
         "id": 4,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/kubis.jpeg",
         "nama": "Kubis",
         "harga": "7.000"
     },
     {
         "id": 5,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/wortel.jpeg",
         "nama": "Wortel",
         "harga": "9.000"
     },
     {
         "id": 6,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/buncis.jpeg",
         "nama": "Buncis",
         "harga": "8.000"
     },
     {
         "id": 7,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/bawang_merah.jpeg",
         "nama": "Bawang Merah",
         "harga": "20.000"
     },
     {
         "id": 8,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/bawang_putih.jpeg",
         "nama": "Bawang Putih",
         "harga": "22.000"
     },
     {
         "id": 9,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/kentang.jpeg",
         "nama": "Kentang",
         "harga": "12.000"
     },
     {
         "id": 10,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/labu_siam.jpeg",
         "nama": "Labu Siam",
         "harga": "7.000"
     },
     {
         "id": 11,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/timun.jpeg",
         "nama": "Timun",
         "harga": "8.000"
     },
     {
         "id": 12,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/kacang_panjang.jpeg",
         "nama": "Kacang Panjang",
         "harga": "6.000"
     },
     {
         "id": 13,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/cabe_rawit1.jpeg",
         "nama": "Cabe Rawit",
         "harga": "8.000"
     },
     {
         "id": 14,
-        "jeniss": "Sayur",
+        "jenis": "Sayur",
         "gambar": "/img/cabe_merah1.jpeg",
         "nama": "Cabe Merah",
         "harga": "28.000"

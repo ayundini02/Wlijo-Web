@@ -1,5 +1,5 @@
 import MainLayout from "../../component/main-layout";
-import listProduk from "../../component/dataWlijo/list.json";
+import listProduk from "../../component/dataWlijo/listLauk.json";
 import Link from "next/link";
 
 export async function getServerSideProps(context) {
@@ -8,7 +8,7 @@ export async function getServerSideProps(context) {
   };
 }
 
-const CardSayur =(props) => (
+const Card =(props) => (
   <div className="card-box-a card-shadow">
     <div className="img-box-a">
       <img src={props.img} alt="" className="img-a img-fluid" />
@@ -41,7 +41,7 @@ const List = (props) => (
         <div className="row">
           <div className="col-md-12 col-lg-8">
             <div className="title-single-box">
-              <h1 className="title-single">Sayur</h1>
+              <h1 className="title-single">{proud.jenis}</h1>
             </div>
           </div>
           <div className="col-md-12 col-lg-4">
@@ -86,9 +86,9 @@ const List = (props) => (
                    Detail&nbsp;{proud.nama}
                    </button>
                    </Link>
-            <CardSayur 
+            <Card 
             id={proud.id}
-            jenis={proud.jeniss}
+            jenis={proud.jenis}
             img={proud.gambar} 
             name={proud.nama}
             hrg={proud.harga}

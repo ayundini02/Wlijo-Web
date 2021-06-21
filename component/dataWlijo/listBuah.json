@@ -1,0 +1,30 @@
+[
+    {
+        "id": 15,
+        "jenis": "Buah",
+        "gambar": "/img/sayur_home_delivery_anggur_merah_buah_anggur_merah_fresh_bandung_1kg_full01_hdid96re.jpg",
+        "nama": "Anggur",
+        "harga": "6.000"
+    },
+    {
+        "id": 16,
+        "jenis": "Buah",
+        "gambar": "/img/7a3f22c1c1df7cc2c0d36b665d167a9a.jpg",
+        "nama": "Jeruk",
+        "harga": "30.000"
+    },
+    {
+        "id": 17,
+        "jenis": "Buah",
+        "gambar": "/img/duta-buah_pepaya-calina-1-pcs--0-8-1-kg-_full02.jpg",
+        "nama": "Pepaya",
+        "harga": "15.000"
+    },
+    {
+        "id": 18,
+        "jenis": "Buah",
+        "gambar": "/img/manggis.jpg",
+        "nama": "Manggis",
+        "harga": "15.000"
+    }
+]
