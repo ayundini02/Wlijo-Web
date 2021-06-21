@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const NavBar = () => (
 
 <nav className="navbar navbar-default navbar-expand-lg fixed-top navbar-trans">
@@ -24,7 +23,7 @@ const NavBar = () => (
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
             <div className="dropdown-menu">
 
-              <Link href="/produksayur">
+            <Link href="/list" className="nav-item dropdown">
               <a className="dropdown-item">Sayur</a>
               </Link>
 

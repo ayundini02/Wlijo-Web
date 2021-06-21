@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import MainLayout from "../../../component/main-layout";
 import detailProduk from "../../../component/dataWlijo/produk.json";
 import Link from "next/link";
@@ -13,8 +12,6 @@ export async function getServerSideProps(context) {
 }
 
 const DetailKategori = (props) => {
-    const router = useRouter();
-    const { kode, jenis } = router.query;
 
     return (
         <MainLayout>
