@@ -41,7 +41,7 @@ const List = (props) => (
         <div className="row">
           <div className="col-md-12 col-lg-8">
             <div className="title-single-box">
-              <h1 className="title-single">{proud.jenis}</h1>
+              <h1 className="title-single">Sayur</h1>
             </div>
           </div>
           <div className="col-md-12 col-lg-4">

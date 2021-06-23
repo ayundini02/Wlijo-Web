@@ -23,15 +23,15 @@ const NavBar = () => (
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kategori</a>
             <div className="dropdown-menu">
 
-            <Link href="/produksayur" className="nav-item dropdown">
+            <Link href="/produksayur/sayur" className="nav-item dropdown">
               <a className="dropdown-item">Sayur</a>
               </Link>
 
-              <Link href="/produkbuah">
+              <Link href="/produkbuah/buah">
               <a className="dropdown-item">Buah</a>
               </Link>
 
-              <Link href="/produklaukpauk">
+              <Link href="/produklaukpauk/laukpauk">
               <a className="dropdown-item">Lauk Pauk</a>
               </Link>
             </div>
