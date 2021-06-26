@@ -10,11 +10,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model produk {
-  idProduk Int @id
-  jenisProduk String
-  namaProduk String
-  gambarProduk String
-  hargaProduk Int
+model Produk {
+  id Int @id @default(autoincrement())
+  jenis String
+  gambar String
+  nama String
+  harga String
   deskripsi String
 }

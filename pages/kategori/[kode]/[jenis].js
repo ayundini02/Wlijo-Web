@@ -1,14 +1,15 @@
 import MainLayout from "../../../component/main-layout";
-import detailProduk from "../../../component/dataWlijo/produk.json";
-import Link from "next/link";
+import prisma from "../../../client.ts";
 
-export async function getServerSideProps(context) {
-    let kode = context.params.kode;
-    let data = detailProduk.find((produk) => produk.id == kode);
+export async function getServerSideProps(ctx) {
+  let kode = ctx.params.kode;
+  let data = await prisma.produk.findUnique({
+    where:{id:Number(kode)}
+  });
 
-    let { jenis, gambar, nama, harga, dekripsi } = data;
+  let { jenis, gambar, nama, harga, deskripsi } = data;
+  return { props: { jenis, gambar, nama, harga, deskripsi } };
 
-    return { props: { jenis, gambar, nama, harga, dekripsi } };
 }
 
 const DetailKategori = (props) => {
@@ -66,7 +67,7 @@ const DetailKategori = (props) => {
                   </div>
                   <div className="property-description">
                     <p className="description color-text-a">
-                      {props.dekripsi}
+                      {props.deskripsi}
                     </p>
                   </div>
                 </div>

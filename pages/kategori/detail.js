@@ -1,12 +1,13 @@
 import MainLayout from "../../component/main-layout";
-import detailProduk from "../../component/dataWlijo/produk.json";
 import Link from "next/link";
+import prisma from "../../client.ts";
 
-  export async function getServerSideProps(context) {
-      return {
-          props: { detailProduk },
-      };
-  }
+export async function getServerSideProps(ctx) {
+  const detailProduk = await prisma.produk.findMany();
+  return {
+    props: { detailProduk },
+  };
+}
 
   const Data = (props) => (
     <main id="main">
@@ -63,7 +64,7 @@ import Link from "next/link";
                   </div>
                   <div className="property-description">
                     <p className="description color-text-a">
-                      {props.dekripsi}
+                      {props.deskripsi}
                     </p>
                   </div>
                 </div>
@@ -86,7 +87,7 @@ import Link from "next/link";
       gambar={produk.gambar}
       nama={produk.nama}
       harga={produk.harga}
-      dekripsi={produk.dekripsi}
+      deskripsi={produk.deskripsi}
       />
     ))}
     </MainLayout>

@@ -48,6 +48,12 @@ const NavBar = () => (
             <a className="nav-link">About</a>
             </Link>
           </li>
+
+      <li className="nav-item">
+          <Link href="/admin/berandaAdmin">
+            <a className="nav-link">Admin</a>
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -61,7 +67,7 @@ const NavBar = () => (
           </button> 
           <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>
-                  <button class="dropdown-item" type="button" href="/admin">Admin</button>
+                  <button class="dropdown-item" type="button" href="/berandaAdmin">Admin</button>
                 </li>
                 </ul>
                 </div>
