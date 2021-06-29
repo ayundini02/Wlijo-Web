@@ -48,15 +48,15 @@ const NavBar = () => (
             <a className="nav-link">About</a>
             </Link>
           </li>
-
-      <li className="nav-item">
-          <Link href="/admin/berandaAdmin">
-            <a className="nav-link">Admin</a>
-            </Link>
-          </li>
         </ul>
       </div>
 
+      <Link href="#">
+      <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <i className="bi bi-cart"></i>
+        </button>
+        </Link>
+        &nbsp;
       <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
         <i className="bi bi-search"></i>
       </button>
@@ -67,7 +67,9 @@ const NavBar = () => (
           </button> 
           <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <li>
-                  <button class="dropdown-item" type="button" href="/berandaAdmin">Admin</button>
+                  <Link href="/loginAdmin">
+                  <button class="dropdown-item" type="button">Admin</button>
+                  </Link>
                 </li>
                 </ul>
                 </div>

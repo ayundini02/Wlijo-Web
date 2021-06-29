@@ -30,6 +30,7 @@ function MyApp({ Component, pageProps }) {
 
   <link href="/css/login.css" rel="stylesheet"/>
   <link href="/css/style.css" rel="stylesheet"/>
+  <link href="/css/admin.css" rel="stylesheet"/>
       </Head>
       <Component {...pageProps} />
       </>

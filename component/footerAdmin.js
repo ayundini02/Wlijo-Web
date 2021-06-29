@@ -6,7 +6,7 @@ const FooterAdmin = () => (
         © Copyright <strong><span>Admin&nbsp;Wlijo</span></strong>
       </div>
       <div class="credits">
-        Designed by <a href="#">Wlijo</a>
+        Designed by <a href="#" class="btn-success">Wlijo</a>
       </div>
     </div>
   </footer>

@@ -1,11 +1,15 @@
 import MainLayout from "../../component/main-layout";
-import listProduk from "../../component/dataWlijo/listSayur.json";
 import Link from "next/link";
+import prisma from "../../client.ts";
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(ctx) {
+  const dataSayur = await prisma.produk.findMany(
+    
+  )
   return {
-      props: { listProduk },
+    props: { dataSayur },
   };
+
 }
 
 const Card =(props) => (
@@ -76,22 +80,22 @@ const List = (props) => (
             </div>
           </div>
 
-          {props.listProduk.map((proud)=>(
-            <div className="col-md-4">
-              <div className="link-a">{proud.id}
+          {props.dataSayur.map((sayur)=>(
+            <div className="col-md-4" key={sayur.id}>
+              <div className="link-a">{sayur.id}
               <Link href="/kategori/[kode]/[jenis]"
-               as={`/kategori/${proud.id}/${proud.nama.replace(/\s+/g, "-")
+               as={`/kategori/${sayur.id}/${sayur.nama.replace(/\s+/g, "-")
                .toLowerCase()}`}>
                  <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse">
-                   Detail&nbsp;{proud.nama}
+                   Detail&nbsp;{sayur.nama}
                    </button>
                    </Link>
             <Card 
-            id={proud.id}
-            jenis={proud.jenis}
-            img={proud.gambar} 
-            name={proud.nama}
-            hrg={proud.harga}
+            id={sayur.id}
+            jenis={sayur.jenis}
+            img={sayur.gambar} 
+            name={sayur.nama}
+            hrg={sayur.harga}
             />
             </div>
           </div>
