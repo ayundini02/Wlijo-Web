@@ -1,11 +1,17 @@
 import MainLayout from "../../component/main-layout";
 import listProduk from "../../component/dataWlijo/listLauk.json";
-import Link from "next/link";
+import prisma from "../../client.ts";
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps(ctx) {
+  const dataLauk = await prisma.produk.findMany(
+    //{
+      //where: { kategoriProduk: 1 },
+    //}
+  )
   return {
-      props: { listProduk },
+    props: { dataLauk },
   };
+
 }
 
 const Card =(props) => (
@@ -54,7 +60,7 @@ const List = (props) => (
                   Kategori
                 </li>
                 <li className="breadcrumb-item active" aria-current="page">
-                  Sayur
+                  lauk
                 </li>
               </ol>
             </nav>
@@ -76,22 +82,22 @@ const List = (props) => (
             </div>
           </div>
 
-          {props.listProduk.map((proud)=>(
-            <div className="col-md-4">
-              <div className="link-a">{proud.id}
+          {props.dataLauk.map((lauk)=>(
+            <div className="col-md-4" key={lauk.id}>
+              <div className="link-a">{lauk.id}
               <Link href="/kategori/[kode]/[jenis]"
-               as={`/kategori/${proud.id}/${proud.nama.replace(/\s+/g, "-")
+               as={`/kategori/${lauk.id}/${lauk.nama.replace(/\s+/g, "-")
                .toLowerCase()}`}>
                  <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse">
-                   Detail&nbsp;{proud.nama}
+                   Detail&nbsp;{lauk.nama}
                    </button>
                    </Link>
             <Card 
-            id={proud.id}
-            jenis={proud.jenis}
-            img={proud.gambar} 
-            name={proud.nama}
-            hrg={proud.harga}
+            id={lauk.id}
+            jenis={lauk.jenis}
+            img={lauk.gambar} 
+            name={lauk.nama}
+            hrg={lauk.harga}
             />
             </div>
           </div>

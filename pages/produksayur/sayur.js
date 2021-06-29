@@ -4,7 +4,9 @@ import prisma from "../../client.ts";
 
 export async function getServerSideProps(ctx) {
   const dataSayur = await prisma.produk.findMany(
-    
+    //{
+      //where: { kategoriProduk: 1 },
+    //}
   )
   return {
     props: { dataSayur },
