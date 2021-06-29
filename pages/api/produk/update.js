@@ -8,16 +8,18 @@ export default async (req, res) => {
 
     const produk = JSON.parse(req.body);
 
-    const tambah = await prisma.produk.create({
-        data: {
-            id: produk.id,
+const perbarui = await prisma.produk.update({
+    where: {
+        id: produk.id,
+    },
+    data: {
+        id: produk.id,
             jenisproduk: produk.jenis,
             namaproduk: produk.nama,
             hargaproduk: produk.harga,
             deskripsi: produk.deskripsi,
             uploadfile: produk.file,
-        },
-    });
-
-    res.json(tambah);
+    },
+  });
+  res.json(perbarui);
 };
