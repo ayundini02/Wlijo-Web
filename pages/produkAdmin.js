@@ -45,8 +45,48 @@ const ProdukAdmin = (props) => (
 </div>
 <br/>
 <div class="d-grid gap-2 d-md-block">
-  <button class="btn btn-primary" type="button">Kirim</button>
+  <button class="btn btn-primary" type="button">tambah</button>
   </div>
+  <br/>
+  <table>
+        <tr>
+            <th>No.</th>
+            <th>Jenis Produk</th>
+            <th>Nama Produk</th>
+            <th>Harga Produk</th>
+            <th>Deskripsi</th>
+            <th>Upload File</th>
+            <th></th>
+        </tr>
+ 
+        <tr>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>
+            <button class="btn btn-primary" type="button">ubah</button>
+            &nbsp;
+            <button class="btn btn-danger" type="button">hapus</button>
+            </td>
+        </tr>
+ 
+        <tr>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td align="center">-</td>
+            <td>
+            <button class="btn btn-primary" type="button">ubah</button>
+            &nbsp;
+            <button class="btn btn-danger" type="button">hapus</button>
+            </td>
+        </tr>
+    </table>
   </div>
 </section>
 
