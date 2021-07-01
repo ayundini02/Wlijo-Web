@@ -1,14 +1,20 @@
 import Banner from "../component/banner";
 import MainLayout from "../component/main-layout";
-import allProduk from "../component/dataWlijo/produk.json";
+import prisma from "../client.ts";
 
 <title>WLIJO</title>
 
-export async function getServerSideProps(context) {
-    return {
-        props: { allProduk },
-    };
-  }
+export async function getServerSideProps(ctx) {
+  const allProduk = await prisma.produk.findMany(
+    //{
+      //where: { kategoriProduk: 1 },
+    //}
+  )
+  return {
+    props: { allProduk },
+  };
+
+}
   
   const CardKategori = props => (
     <div className="card-box-c foo">

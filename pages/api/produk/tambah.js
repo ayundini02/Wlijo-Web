@@ -1,4 +1,4 @@
-import prisma from "../../../client";
+import prisma from "../../../client.ts";
 
 export default async (req, res) => {
     if (req.method !== 'POST')
@@ -10,7 +10,6 @@ export default async (req, res) => {
 
     const tambah = await prisma.produk.create({
         data: {
-            id: produk.id,
             jenis: produk.jenis,
             nama: produk.nama,
             harga: produk.harga,
