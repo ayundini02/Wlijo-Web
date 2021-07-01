@@ -14,11 +14,11 @@ const perbarui = await prisma.produk.update({
     },
     data: {
         id: produk.id,
-            jenisproduk: produk.jenis,
-            namaproduk: produk.nama,
-            hargaproduk: produk.harga,
-            deskripsi: produk.deskripsi,
-            uploadfile: produk.file,
+        jenis: produk.jenis,
+        nama: produk.nama,
+        harga: produk.harga,
+        deskripsi: produk.deskripsi,
+        gambar: produk.gambar,
     },
   });
   res.json(perbarui);
