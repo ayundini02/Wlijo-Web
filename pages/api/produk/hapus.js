@@ -8,10 +8,10 @@ export default async (req, res) => {
 
     const produk = JSON.parse(req.body);
 
-const hapus = await prisma.produk.delete({
-    where: {
-        id: produk.id,
-    },
-  });
-  res.json(hapus);
+    const hapus = await prisma.produk.delete({
+        where: {
+            id: produk.id,
+        },
+    });
+    res.json(hapus);
 };
