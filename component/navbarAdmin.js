@@ -29,7 +29,7 @@ const NavbarAdmin = () => (
             </Link>
           </li>
           <li>
-            <Link href="/admin/produkAdmin">
+            <Link href="/admin/produk/produkAdmin">
               <a class="nav-link scrollto">
                 <i class="bx bx-user"></i>
                 <span>Produk</span>

@@ -1,5 +1,5 @@
-import MainLayout from '../../component/MainLayoutAdmin';
-import prisma from '../../client.ts';
+import MainLayout from '../../../component/MainLayoutAdmin';
+import prisma from '../../../client.ts';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Link from "next/link";
@@ -121,10 +121,22 @@ const adminProduk = (props) => {
                     <td>{produk.deskripsi}</td>
                     <td>{produk.gambar}</td>
                     <td align="center">
-                      <Link href="/admin/ubah/[kode]" as={`/admin/ubah/${produk.id}`}>
+                      <Link href="/admin/produk/ubah/[kode]" as={`/admin/produk/ubah/${produk.id}`}>
                         <button class="btn btn-primary" type="submit">ubah</button>
                       </Link>
-                      <button class="btn btn-danger" type="submit">
+                      <button class="btn btn-danger" type="submit"
+                        onClick={async (event) => {
+                          try {
+                            const hapus = await fetch("/api/produk/hapus", {
+                              method: "POST",
+                              body: JSON.stringify(produk),
+                            });
+                            location.reload();
+                            alert("Data Berhasil dihapus");
+                          } catch (error) {
+                            console.log(error);
+                          }
+                        }}>
                         hapus</button>
                     </td>
                   </tr>

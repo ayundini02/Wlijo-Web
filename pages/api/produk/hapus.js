@@ -1,4 +1,4 @@
-import prisma from "../../../client";
+import prisma from "../../../client.ts";
 
 export default async (req, res) => {
     if (req.method !== 'POST')
