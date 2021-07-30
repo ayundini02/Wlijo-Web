@@ -4,9 +4,9 @@ import prisma from "../../client.ts";
 
 export async function getServerSideProps(ctx) {
   const dataBuah = await prisma.produk.findMany(
-    //{
-      //where: { kategoriProduk: 1 },
-    //}
+    {
+      where: { jenis: "buah" },
+    }
   )
   return {
     props: { dataBuah },
@@ -14,128 +14,96 @@ export async function getServerSideProps(ctx) {
 
 }
 
-const Card =(props) => (
-  <div className="card-box-a card-shadow">
-    <div className="img-box-a">
+const Card = (props) => (
+  <div className="produk">
+    <div className="barang">
       <img src={props.img} alt="" className="img-a img-fluid" />
-    </div>
-    <div className="card-overlay">
-      <div className="card-overlay-a-content">
-        <div className="card-header-a">
-          <h2 className="card-title-a">
-            <a href="#">{props.name}</a>
-          </h2>
-        </div>
-        <div className="card-body-a">
-          <div className="price-box d-flex">
-            <span className="price-a">Rp. {props.hrg}</span>
-          </div>
-        </div>
+      <h4>{props.name}</h4>
+      <div className="price-box d-flex">
+        <span className="price-a">Rp. {props.hrg}</span>
       </div>
     </div>
   </div>
 
-  
+
 );
 
 const List = (props) => (
   <MainLayout>
     <div className="container">
 
-        <section className="intro-single">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12 col-lg-8">
-            <div className="title-single-box">
-              <h1 className="title-single">Buah</h1>
+      <section className="intro-single">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 col-lg-8">
+              <div className="title-single-box">
+                <h1 className="title-single">Buah</h1>
+              </div>
+              <br />
+              <Link href="/home">
+                <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+                  <i className="bi bi-arrow-left-square"></i>
+                </button>
+              </Link>
             </div>
-          </div>
-          <div className="col-md-12 col-lg-4">
-            <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <a href="#">Home</a>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Kategori
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  buah
-                </li>
-              </ol>
-            </nav>
+            <div className="col-md-12 col-lg-4">
+              <nav aria-label="breadcrumb" className="breadcrumb-box d-flex justify-content-lg-end">
+                <ol className="breadcrumb">
+                  <li className="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    Kategori
+                  </li>
+                  <li className="breadcrumb-item active" aria-current="page">
+                    buah
+                  </li>
+                </ol>
+              </nav>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-        <section className="property-grid grid">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="grid-option">
-              <form>
-                <select className="custom-select">
-                  <option selected="">All</option>
-                </select>
-              </form>
+      <section className="property-grid grid">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="grid-option">
+                <form>
+                  <select className="custom-select">
+                    <option selected="">All</option>
+                  </select>
+                </form>
+              </div>
             </div>
-          </div>
 
-          {props.dataBuah.map((buah)=>(
-            <div className="col-md-4" key={buah.id}>
-              <div className="link-a">{buah.id}
-              <Link href="/kategori/[kode]/[jenis]"
-               as={`/kategori/${proud.id}/${proud.nama.replace(/\s+/g, "-")
-               .toLowerCase()}`}>
-                 <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse">
-                   Detail&nbsp;{proud.nama}
-                   </button>
-                   </Link>
-            <Card 
-            id={buah.id}
-            jenis={buah.jenis}
-            img={buah.gambar} 
-            name={buah.nama}
-            hrg={buah.harga}
-            />
-            </div>
-          </div>
-          ))}
-      </div>
-
-        <div className="row">
-          <div className="col-sm-12">
-            <nav className="pagination-a">
-              <ul className="pagination justify-content-end">
-                <li className="page-item disabled">
-                  <a className="page-link" href="#" tabindex="-1">
-                    <span className="bi bi-chevron-left"></span>
-                  </a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">1</a>
-                </li>
-                <li className="page-item active">
-                  <a className="page-link" href="#">2</a>
-                </li>
-                <li className="page-item">
-                  <a className="page-link" href="#">3</a>
-                </li>
-                <li className="page-item next">
-                  <a className="page-link" href="#">
-                    <span className="bi bi-chevron-right"></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            {props.dataBuah.map((buah) => (
+              <div className="col-md-4" key={buah.id}>
+                <div className="link-a">{buah.id}
+                  <Link href="/kategori/[kode]/[jenis]"
+                    as={`/kategori/${buah.id}/${buah.nama.replace(/\s+/g, "-")
+                      .toLowerCase()}`}>
+                    <button type="button" className="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse">
+                      Detail&nbsp;{buah.nama}
+                    </button>
+                  </Link>
+                  <Card
+                    id={buah.id}
+                    jenis={buah.jenis}
+                    img={buah.gambar}
+                    name={buah.nama}
+                    hrg={buah.harga}
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
 
-    </MainLayout>
+  </MainLayout>
 );
 
 export default List;

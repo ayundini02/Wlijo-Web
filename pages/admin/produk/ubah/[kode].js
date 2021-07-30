@@ -24,48 +24,48 @@ const FormUpdateProduk = (props) => {
     const [deskripsi, setDeskripsi] = useState(props.deskripsi);
 
     return (
-        <section class="inner-page">
-            <div class="container">
+        <section className="inner-page">
+            <div className="container">
                 <form onSubmit={handleSubmit(props.onSubmit)}>
-                    <label class="form-label">Jenis Produk</label>
+                    <label className="form-label">Jenis Produk</label>
                     <select {...register("jenis", { required: true })}
-                        type="text" class="form-select" id="jenis" value={jenis} onChange={(Event) => setJenis(Event.target.value)}>
+                        type="text" className="form-select" id="jenis" value={jenis} onChange={(Event) => setJenis(Event.target.value)}>
                         <option selected></option>
                         <option id="sayur" value="sayur">Sayur</option>
                         <option id="buah" value="buah">Buah</option>
                         <option id="lauk" value="lauk-pauk">Lauk-Pauk</option>
                     </select>
                     <br />
-                    <div class="mb-3">
-                        <label class="form-label">Nama Produk</label>
+                    <div className="mb-3">
+                        <label className="form-label">Nama Produk</label>
                         <input {...register("nama", { required: true })}
-                            type="text" class="form-control" id="nama" placeholder="nama produk"
+                            type="text" className="form-control" id="nama" placeholder="nama produk"
                             value={nama} onChange={(Event) => setNama(Event.target.value)} />
 
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Harga Produk</label>
+                    <div className="mb-3">
+                        <label className="form-label">Harga Produk</label>
                         <input {...register("harga", { required: true })}
-                            type="text" class="form-control" id="harga" placeholder="Rp."
+                            type="text" className="form-control" id="harga" placeholder="Rp."
                             value={harga} onChange={(Event) => setHarga(Event.target.value)} />
 
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label">Deskripsi</label>
+                    <div className="mb-3">
+                        <label className="form-label">Deskripsi</label>
                         <textarea {...register("deskripsi", { required: true })}
-                            type="text" class="form-control" id="deskripsi" rows="3"
+                            type="text" className="form-control" id="deskripsi" rows="3"
                             value={deskripsi} onChange={(Event) => setDeskripsi(Event.target.value)}></textarea>
 
                     </div>
-                    <div class="mb-3">
-                        <label for="formFileSm" class="form-label">Upload File</label>
+                    <div className="mb-3">
+                        <label for="formFileSm" className="form-label">Upload File</label>
                         <input {...register("gambar", { required: true })}
-                            type="text" class="form-control form-control-sm" id="gambar"
+                            type="text" className="form-control form-control-sm" id="gambar"
                             value={gambar} onChange={(Event) => setGambar(Event.target.value)} />
 
                     </div><br />
-                    <div class="d-grid gap-2 d-md-block">
-                        <button class="btn btn-primary" type="submit">update</button>
+                    <div className="d-grid gap-2 d-md-block">
+                        <button className="btn btn-primary" type="submit">update</button>
                     </div>
                 </form>
             </div>
@@ -79,10 +79,10 @@ const updateProduk = (props) => {
         <MainLayout>
             <main id="main">
 
-                <section class="breadcrumbs">
-                    <div class="container">
+                <section className="breadcrumbs">
+                    <div className="container">
 
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div className="d-flex justify-content-between align-items-center">
                             <h2>Produk</h2>
                             <ol>
                                 <li><a href="/berandaAdmin">Home</a></li>

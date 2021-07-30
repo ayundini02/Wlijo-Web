@@ -1,145 +1,145 @@
 const Footer = () => (
-<footer>
-<section class="section-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">Tentang Kami</h3>
-            </div>
-            <div class="w-body-a">
-              <p class="w-text-a color-text-a">
-              Wlijo memberikan layanan belanja sayuran dengan kualitas yang fresh, higenis, dan tahan lama. Serta memastikan harga yang stabil dipasaran dan pemenuhan order secara tepat waktu.
-              </p>
-            </div>
-            <div class="w-footer-a">
-              <ul class="list-unstyled">
-                <li class="color-a">
-                  <span class="color-text-a">Phone .</span> sayuranwlijo@gmail.com
-                </li>
-                <li class="color-a">
-                  <span class="color-text-a">Email .</span> +62 821-4615-7001
-                </li>
-              </ul>
+  <footer>
+    <section className="section-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12 col-md-4">
+            <div className="widget-a">
+              <div className="w-header-a">
+                <h3 className="w-title-a text-brand">Tentang Kami</h3>
+              </div>
+              <div className="w-body-a">
+                <p className="w-text-a color-text-a">
+                  Wlijo memberikan layanan belanja sayuran dengan kualitas yang fresh, higenis, dan tahan lama. Serta memastikan harga yang stabil dipasaran dan pemenuhan order secara tepat waktu.
+                </p>
+              </div>
+              <div className="w-footer-a">
+                <ul className="list-unstyled">
+                  <li className="color-a">
+                    <span className="color-text-a">Phone .</span> sayuranwlijo@gmail.com
+                  </li>
+                  <li className="color-a">
+                    <span className="color-text-a">Email .</span> +62 821-4615-7001
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">Melayani Kota:</h3>
+          <div className="col-sm-12 col-md-4 section-md-t3">
+            <div className="widget-a">
+              <div className="w-header-a">
+                <h3 className="w-title-a text-brand">Melayani Kota:</h3>
+              </div>
+              <div className="w-body-a">
+                <div className="w-body-a">
+                  <ul className="list-unstyled">
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Banyuwangi</a>
+                    </li>
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Klatak</a>
+                    </li>
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Genteng</a>
+                    </li>
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Sempu</a>
+                    </li>
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Rogojampi</a>
+                    </li>
+                    <li className="item-list-a">
+                      <i className="bi bi-chevron-right"></i> <a href="#">Glenmore</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="w-body-a">
-              <div class="w-body-a">
-                <ul class="list-unstyled">
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Banyuwangi</a>
+          </div>
+          <div className="col-sm-12 col-md-4 section-md-t3">
+            <div className="widget-a">
+              <div className="w-header-a">
+                <h3 className="w-title-a text-brand">Opening Hours</h3>
+              </div>
+              <div className="w-body-a">
+                <ul className="list-unstyled">
+                  <li className="item-list-a">
+                    <i className="bi bi-chevron-right"></i> <a href="#">Monday: Closed</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Klatak</a>
+                  <li className="item-list-a">
+                    <i className="bi bi-chevron-right"></i> <a href="#">Tue-Wed : 9:Am - 10PM</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Genteng</a>
+                  <li className="item-list-a">
+                    <i className="bi bi-chevron-right"></i> <a href="#">Thu-Fri : 9:Am - 10PM</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Sempu</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Rogojampi</a>
-                  </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Glenmore</a>
+                  <li className="item-list-a">
+                    <i className="bi bi-chevron-right"></i> <a href="#">Sat-Sun : 5:PM - 10PM</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4 section-md-t3">
-          <div class="widget-a">
-            <div class="w-header-a">
-              <h3 class="w-title-a text-brand">Opening Hours</h3>
-            </div>
-            <div class="w-body-a">
-              <ul class="list-unstyled">
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Monday: Closed</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Tue-Wed : 9:Am - 10PM</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Thu-Fri : 9:Am - 10PM</a>
-                </li>
-                <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Sat-Sun : 5:PM - 10PM</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          </div>
-        </div>
-    </div>
+      </div>
     </section>
-    <br/>
+    <br />
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <nav class="nav-footer">
-            <ul class="list-inline">
-              <li class="list-inline-item">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-12">
+          <nav className="nav-footer">
+            <ul className="list-inline">
+              <li className="list-inline-item">
                 <a href="#">Home</a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">Kategori</a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">Contact</a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">About</a>
               </li>
             </ul>
           </nav>
-          <div class="socials-a">
-            <ul class="list-inline">
-              <li class="list-inline-item">
+          <div className="socials-a">
+            <ul className="list-inline">
+              <li className="list-inline-item">
                 <a href="#">
-                  <i class="bi bi-facebook" aria-hidden="true"></i>
+                  <i className="bi bi-facebook" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">
-                  <i class="bi bi-twitter" aria-hidden="true"></i>
+                  <i className="bi bi-twitter" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">
-                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                  <i className="bi bi-instagram" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
+              <li className="list-inline-item">
                 <a href="#">
-                  <i class="bi bi-linkedin" aria-hidden="true"></i>
+                  <i className="bi bi-linkedin" aria-hidden="true"></i>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="copyright-footer">
-            <p class="copyright color-text-a">
-            All Rights Reserved. © Copyright 2021
+          <div className="copyright-footer">
+            <p className="copyright color-text-a">
+              All Rights Reserved. © Copyright 2021
             </p>
           </div>
-          <div class="credits">
+          <div className="credits">
             Designed by Wlijo
           </div>
         </div>
       </div>
     </div>
   </footer>
-  
+
 );
 
 export default Footer;

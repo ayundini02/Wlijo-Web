@@ -4,10 +4,10 @@ const BerandaAdmin = (props) => (
   <MainLayout>
     <main id="main">
 
-      <section class="breadcrumbs">
-        <div class="container">
+      <section className="breadcrumbs">
+        <div className="container">
 
-          <div class="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-between align-items-center">
             <h2>Dasboard</h2>
             <ol>
               <li><a href="/berandaAdmin">Home</a></li>
@@ -18,10 +18,10 @@ const BerandaAdmin = (props) => (
         </div>
       </section>
 
-      <section class="inner-page">
-        <div class="container">
+      <section className="inner-page">
+        <div className="container">
           <p>
-            Example inner page template
+            Welcome To Admin Wlijo
           </p>
         </div>
       </section>
